@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 4</title>
+  </head>
+  <body>
+    <script>
+      const names = ['alice', 'bob', 'carol'];
+
+      const capitalized = names.map(
+        name => name.charAt(0).toUpperCase() + name.slice(1)
+      );
+
+      console.log(capitalized);
+      alert(capitalized.join(", ")); // shows: Alice, Bob, Carol
+      document.body.innerHTML = `<h1>${capitalized.join(", ")}</h1>`;
+    </script>
+  </body>
+</html>
