@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 5</title>
+  </head>
+  <body>
+    <script>
+      const users = [
+        { name: 'Anna', active: true },
+        { name: 'Tom', active: false },
+        { name: 'Luna', active: true }
+      ];
+
+      const activeUsers = users.filter(user => user.active);
+
+      const formatted = activeUsers
+        .map(u => `{ name: '${u.name}', active: ${u.active} }`)
+        .join(', ');
+
+      console.log(formatted);
+      document.body.innerHTML = `<h1>${formatted}</h1>`;
+      alert(formatted);
+    </script>
+  </body>
+</html>
