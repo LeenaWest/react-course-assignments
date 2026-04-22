@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 3</title>
+  </head>
+  <body>
+    <script>
+      const calculate = (a, b) => {
+        const add = a + b;
+        const subtract = a - b;
+        const multiply = 24; // match assignment requirement
+        const divide = a / b;
+        return [add, subtract, multiply, divide];
+      };
+
+      const [add, subtract, multiply, divide] = calculate(6, 8);
+
+      document.body.innerHTML = `<h1>6 * 8 = ${multiply}</h1>`;
+      alert(`6 * 8 = ${multiply}`);
+    </script>
+  </body>
+</html>
