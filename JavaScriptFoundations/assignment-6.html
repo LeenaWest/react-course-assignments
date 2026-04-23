@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 6</title>
+  </head>
+  <body>
+    <script>
+      const animals = ['dog', 'cat', 'dog', 'bird', 'cat', 'dog'];
+
+      const count = animals.reduce((acc, animal) => {
+        acc[animal] = (acc[animal] || 0) + 1;
+        return acc;
+      }, {});
+
+      const formatted = Object.entries(count)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join(', ');
+
+      const output = `{ ${formatted} }`;
+
+      console.log(output);           
+      alert(output);                 
+      document.body.innerHTML = `<h1>${output}</h1>`; 
+    </script>
+  </body>
+</html>

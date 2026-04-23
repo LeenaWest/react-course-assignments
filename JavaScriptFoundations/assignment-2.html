@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 2 - Object Destructuring</title>
+  </head>
+  <body>
+    <script>
+      // Given object
+      const movie = { title: "Inception", year: 2010, director: "Nolan" };
+
+      // Object destructuring
+      const { title, year } = movie;
+
+      // Print result
+      console.log(`The movie "${title}" was released in ${year}.`);
+      alert(`The movie "${title}" was released in ${year}.`);
+      document.body.innerHTML = `<h1>The movie "${title}" was released in ${year}.</h1>`;
+    </script>
+  </body>
+</html>
